@@ -1,0 +1,38 @@
+{
+  "name": "fortune-sheet-back",
+  "version": "0.0.1",
+  "description": "Example app demonstrating `@shinka-rpc/core`",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@fortune-sheet/react": "^1.0.4",
+    "@shinka-rpc/collections": "file:../../shinka/shinka-js/pack/shinka-rpc-collections-0.0.1-alpha.0.tgz",
+    "@shinka-rpc/concurrency": "file:../../shinka/shinka-js/pack/shinka-rpc-concurrency-0.0.1-alpha.0.tgz",
+    "@shinka-rpc/consensus": "file:../../shinka/shinka-js/pack/shinka-rpc-consensus-0.0.1-alpha.0.tgz",
+    "@shinka-rpc/core": "file:../../shinka/shinka-js/pack/shinka-rpc-core-0.1.0-alpha.0.tgz",
+    "@shinka-rpc/dedicated-worker": "file:../../shinka/shinka-js/pack/shinka-rpc-dedicated-worker-0.1.0-alpha.0.tgz",
+    "@shinka-rpc/exclusive-lock": "file:../../shinka/shinka-js/pack/shinka-rpc-exclusive-lock-0.0.1-alpha.0.tgz",
+    "@shinka-rpc/libtransport": "file:../../shinka/shinka-js/pack/shinka-rpc-libtransport-0.1.0-alpha.0.tgz",
+    "@shinka-rpc/limon-opportunistic": "file:../../shinka/shinka-js/pack/shinka-rpc-limon-opportunistic-0.1.0-alpha.0.tgz",
+    "@shinka-rpc/outscope": "file:../../shinka/shinka-js/pack/shinka-rpc-outscope-0.0.1-alpha.0.tgz",
+    "@shinka-rpc/serializer-msgspec": "file:../../shinka/shinka-js/pack/shinka-rpc-serializer-msgspec-0.1.0-alpha.0.tgz",
+    "@shinka-rpc/shared-worker": "file:../../shinka/shinka-js/pack/shinka-rpc-shared-worker-0.1.0-alpha.0.tgz",
+    "@shinka-rpc/util": "file:../../shinka/shinka-js/pack/shinka-rpc-util-0.0.3-alpha.0.tgz",
+    "@shinka-rpc/web-socket": "file:../../shinka/shinka-js/pack/shinka-rpc-web-socket-0.1.0-alpha.0.tgz",
+    "@types/express": "^5.0.6",
+    "@types/lodash": "^4.17.25",
+    "@types/node": "^26.2.0",
+    "@types/ws": "^8.18.1",
+    "bufferutil": "^4.1.0",
+    "express": "^5.2.1",
+    "immer": "^11.1.18",
+    "lodash": "^4.18.1",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2",
+    "ws": "^8.21.3"
+  }
+}
