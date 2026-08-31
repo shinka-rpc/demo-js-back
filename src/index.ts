@@ -9,6 +9,7 @@ import outscope from "@shinka-rpc/outscope/node-process";
 import serializer from "@shinka-rpc/serializer-msgspec";
 import { webSocketServer } from "@shinka-rpc/web-socket";
 import limonOpportunistic from "@shinka-rpc/limon-opportunistic";
+import { clientRegistry } from "@shinka-rpc/scenarios";
 
 // import { webSocketServer } from "./lib/ws-server";
 import { ServerWorkbook, createSheet, type Op } from "./lib/server-workbook";
@@ -37,11 +38,10 @@ const server = new Server<any, any, any>({
   serializer,
   limon: limonOpportunistic({}),
 });
-const clients = new Set<IBus<any, any>>();
 
 server.addEventListener("error", console.error);
-server.addEventListener("connect", (bus) => clients.add(bus));
-server.addEventListener("disconnect", (bus) => clients.delete(bus));
+
+const clients = clientRegistry(server);
 
 const workbook = new ServerWorkbook([createSheet("default")]);
 
