@@ -4,7 +4,7 @@ import { WebSocketServer } from "ws";
 
 import type { Request, Response } from "express";
 
-import { Server, type IBus } from "@shinka-rpc/core";
+import { Server } from "@shinka-rpc/core";
 import outscope from "@shinka-rpc/outscope/node-process";
 import serializer from "@shinka-rpc/serializer-msgspec";
 import { webSocketServer } from "@shinka-rpc/web-socket";
@@ -36,7 +36,7 @@ const server = new Server<any, any, any>({
   outscope,
   transport: webSocketServer(wss),
   serializer,
-  limon: limonOpportunistic({}),
+  limon: limonOpportunistic(),
 });
 
 server.addEventListener("error", console.error);

@@ -12,9 +12,9 @@
   "dependencies": {
     "@fortune-sheet/react": "^1.0.4",
     "@shinka-rpc/core": "^0.1.0-alpha.2",
-    "@shinka-rpc/limon-opportunistic": "^0.1.0-alpha.0",
+    "@shinka-rpc/limon-opportunistic": "^0.1.0-alpha.1",
     "@shinka-rpc/outscope": "^0.1.0-alpha.0",
-    "@shinka-rpc/scenarios": "^0.1.0-alpha.0",
+    "@shinka-rpc/scenarios": "^0.1.0-alpha.1",
     "@shinka-rpc/serializer-msgspec": "^0.1.0-alpha.0",
     "@shinka-rpc/web-socket": "^0.1.0-alpha.0",
     "@types/express": "^5.0.6",
