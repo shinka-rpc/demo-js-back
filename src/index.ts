@@ -32,7 +32,7 @@ app.get("/", (req: Request, res: Response) => {
 
 const wss = new WebSocketServer({ server: httpServer, path: "/ws" });
 
-const server = new Server<any, any, any>({
+const server = new Server({
   outscope,
   transport: webSocketServer(wss),
   serializer,
