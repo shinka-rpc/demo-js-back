@@ -28,5 +28,9 @@
     "tsx": "^4.23.12",
     "typescript": "^7.0.2",
     "ws": "^8.21.3"
+  },
+  "allowScripts": {
+    "bufferutil@4.1.0": true,
+    "esbuild@0.28.2": true
   }
 }
