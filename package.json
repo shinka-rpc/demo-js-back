@@ -15,6 +15,7 @@
     "@shinka-rpc/limon-opportunistic": "^0.1.0-alpha.1",
     "@shinka-rpc/outscope": "^0.1.0-alpha.0",
     "@shinka-rpc/scenarios": "^0.1.0-alpha.1",
+    "@shinka-rpc/serializer-gzip": "^0.1.0-alpha.3",
     "@shinka-rpc/serializer-msgspec": "^0.1.0-alpha.0",
     "@shinka-rpc/web-socket": "^0.1.0-alpha.0",
     "@types/express": "^5.0.6",

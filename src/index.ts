@@ -6,13 +6,16 @@ import type { Request, Response } from "express";
 
 import { Server } from "@shinka-rpc/core";
 import outscope from "@shinka-rpc/outscope/node-process";
-import serializer from "@shinka-rpc/serializer-msgspec";
+import serializerMsgPack from "@shinka-rpc/serializer-msgspec";
+// import { streamGzip } from "@shinka-rpc/serializer-gzip";
 import { webSocketServer } from "@shinka-rpc/web-socket";
 import limonOpportunistic from "@shinka-rpc/limon-opportunistic";
 import { clientRegistry } from "@shinka-rpc/scenarios";
 
-// import { webSocketServer } from "./lib/ws-server";
 import { ServerWorkbook, createSheet, type Op } from "./lib/server-workbook";
+
+// const serializer = streamGzip(serializerMsgPack, {});
+const serializer = serializerMsgPack;
 
 const app = express();
 const port = 8081; // The port your express server will be running on.
