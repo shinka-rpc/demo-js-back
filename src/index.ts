@@ -7,15 +7,14 @@ import type { Request, Response } from "express";
 import { Server } from "@shinka-rpc/core";
 import outscope from "@shinka-rpc/outscope/node-process";
 import serializerMsgPack from "@shinka-rpc/serializer-msgspec";
-// import { streamGzip } from "@shinka-rpc/serializer-gzip";
+import { streamGzip } from "@shinka-rpc/serializer-gzip";
 import { webSocketServer } from "@shinka-rpc/web-socket";
 import limonOpportunistic from "@shinka-rpc/limon-opportunistic";
 import { clientRegistry } from "@shinka-rpc/scenarios";
 
 import { ServerWorkbook, createSheet, type Op } from "./lib/server-workbook";
 
-// const serializer = streamGzip(serializerMsgPack, {});
-const serializer = serializerMsgPack;
+const serializer = streamGzip(serializerMsgPack, { deflate: { gzip: true } });
 
 const app = express();
 const port = 8081; // The port your express server will be running on.
