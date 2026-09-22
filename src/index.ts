@@ -14,6 +14,7 @@ import { clientRegistry } from "@shinka-rpc/scenarios";
 
 import { ServerWorkbook, createSheet, type Op } from "./lib/server-workbook";
 
+// Example high-order-serializer usage
 const serializer = streamGzip(serializerMsgPack, { deflate: { gzip: true } });
 
 const app = express();
